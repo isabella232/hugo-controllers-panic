@@ -1,0 +1,26 @@
+{{/*
+  controller/base
+
+  @author @regisphilibert
+
+  @context Page (.)
+
+  @return Map (.)
+          String (.title)
+          String (.permalink)
+          String (.description)
+          
+  @access public
+*/}}
+{{ $s := newScratch }}
+{{ $s.Set "data" dict }}
+{{ $s.SetInMap "data" "title" .Title }}
+{{ $s.SetInMap "data" "permalink" .RelPermalink }}
+
+{{ with .Params.description }}
+  {{ $s.SetInMap "data" "description" . }}
+{{ else }}
+  {{ $s.SetInMap "data" "description" .Summary }}
+{{ end }}
+
+{{ return $s.Get "data" }}

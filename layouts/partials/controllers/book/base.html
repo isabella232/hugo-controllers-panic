@@ -1,0 +1,17 @@
+
+{{ $s := newScratch }}
+{{ $s.Set "data" (partialCached "controllers/base" . .File.UniqueID) }}
+{{ with .Params.editions }}
+  {{ $s.SetInMap "data" "editions" . }}
+  {{ with index . 0 }}
+    {{ $s.SetInMap "data" "latest_edition" . }}
+    {{ with .cover_image }}
+      {{ $s.SetInMap "data" "cover_image" . }}
+    {{ end }}
+  {{ end }}
+  {{ with $.Content }}
+    {{ $s.SetInMap "data" "content" . }}
+  {{ end }}
+{{ end }}
+
+{{ return $s.Get "data" }}

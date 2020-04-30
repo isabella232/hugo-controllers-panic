@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+{{ with partial "controller" . }}
+  {{ with .title }}
+    <h1>{{ . }}</h1>
+    <hr>
+  {{ end }}
+  {{ $items := where site.RegularPages "Type" "book" }}
+  <h3>20 Books</h3>
+  {{ range first 40 $items }}
+    {{ with partial "controller" . }}
+      <div>{{ .title }}</div>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ end }}

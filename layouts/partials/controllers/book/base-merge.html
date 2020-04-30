@@ -1,0 +1,16 @@
+
+{{ $data := partialCached "controllers/base" . .File.UniqueID }}
+{{ with .Params.editions }}
+  {{ $data = merge $data (dict "editions" .) }}
+  {{ with index . 0 }}
+    {{ $data = merge $data (dict "latest_edition" .) }}
+    {{ with .cover_image }}
+      {{ $data = merge $data (dict "cover_image" .) }}
+    {{ end }}
+  {{ end }}
+  {{ with $.Content }}
+    {{ $data = merge $data (dict "cover_image" .) }}
+  {{ end }}
+{{ end }}
+
+{{ return $data }}

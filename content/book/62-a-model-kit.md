@@ -1,0 +1,48 @@
+---
+title: '62: A Model Kit'
+subtitle: ''
+date: 2000-04-01T06:00:00Z
+series: ''
+genre: Fiction
+subgenre: []
+language: Spanish
+authors:
+- author/julio-cortazar.md
+translators:
+- author/gregory-rabassa.md
+editors: []
+contributors: []
+editions:
+- binding: paperback
+  isbn: "9780811214377"
+  date: 2000-04-01T06:00:00.000+00:00
+  description: ''
+  trim_size: 5x8
+  page_count: "288"
+  sales_data:
+    forsale: false
+    saleprice: 
+    shipping_charge: 
+    price_us: 18.95
+    price_cn: 
+    for_sale: false
+    sales_price: 
+    shipping_weight: 
+  contributors: []
+  cover_image: 62_A_Model_Kit_.jpg
+  audible_url: ''
+  apple_books_url: ''
+  audiobook_sample_file: ''
+featured_image:
+  file: ''
+  caption: ''
+_slug: 62-a-model-kit
+headerClasses: ''
+headerColorTheme: ''
+headerHeightClass: ''
+backgroundPosition: ''
+bg_opacity: false
+
+---
+First published in English in 1972 and long out of print, _62: A Model Kit_ is Julio Cortázar’s brilliant, intricate blueprint for life in the so-called "City." As one of the main characters, the intellectual Juan, puts it: to one person the City might appear as Paris, to another it might be where one goes upon getting out of bed in Barcelona; to another it might appear as a beer hall in Oslo. This cityscape, as Carlos Fuentes describes it, "seems drawn up by the Marx Brothers with an assist from Bela Lugosi!" It is the setting where the usual restraints of traditional novelistic order are discarded and the reader is taken on a daring and exciting new experience of life itself, _The New York Times_ described _62: A Model Kit_ as "deeply touching, enjoyable, beautifully written and fascinatingly mysterious." _Library Journal_ said _62: A Model Kit_ is "a highly satisfying work by one of the most extraordinary writers of our time."
+
